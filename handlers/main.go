@@ -21,7 +21,7 @@ func Init() {
 
 	err := godotenv.Load(".env")
 	if err != nil {
-		log.Println("Error loading .env file")
+		log.Println("WARNING : Failed to load .env file")
 	}
 
 	fmt.Println("Startup sequence done.")

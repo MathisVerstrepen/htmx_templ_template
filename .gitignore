@@ -13,6 +13,7 @@
 *.test.prof
 *.test.trace
 /vendor/
+/bin/
 /go.sum
 /tmp
 *_templ.go
