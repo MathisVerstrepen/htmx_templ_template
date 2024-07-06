@@ -24,13 +24,6 @@ package-lock.json
 # Env
 .env
 
-# Images
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.webp
-
 # Tailwind
 output.css
 
