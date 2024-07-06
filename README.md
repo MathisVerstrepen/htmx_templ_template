@@ -29,12 +29,17 @@ This repository provides a starter template for building web applications using 
    go mod tidy
    ```
 
-3. Run the development server:
+3. Install tailwind dependencies:
+   ```
+   npm install
+   ```
+
+4. Run the development server:
    ```
    air
    ```
 
-4. Open your browser and navigate to `http://localhost:4269`
+5. Open your browser and navigate to `http://localhost:4269`
 
 ## Project Structure
 
