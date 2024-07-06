@@ -35,17 +35,22 @@ This repository provides a starter template for building web applications using 
    alias air="~/go/bin/air"
    ```
 
-4. Install tailwind dependencies:
+4. Install templ CLI tool:
+   ```
+   go install github.com/a-h/templ/cmd/templ@latest
+   ```
+
+5. Install tailwind dependencies:
    ```
    npm install
    ```
 
-5. Run the development server:
+6. Run the development server:
    ```
    air
    ```
 
-6. Open your browser and navigate to `http://localhost:4269`
+7. Open your browser and navigate to `http://localhost:4269`
 
 ## Project Structure
 
