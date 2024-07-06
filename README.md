@@ -29,17 +29,23 @@ This repository provides a starter template for building web applications using 
    go mod tidy
    ```
 
-3. Install tailwind dependencies:
+3. Install Air for live reload:
+   ```
+   go install github.com/air-verse/air@latest
+   alias air="~/go/bin/air"
+   ```
+
+4. Install tailwind dependencies:
    ```
    npm install
    ```
 
-4. Run the development server:
+5. Run the development server:
    ```
    air
    ```
 
-5. Open your browser and navigate to `http://localhost:4269`
+6. Open your browser and navigate to `http://localhost:4269`
 
 ## Project Structure
 
