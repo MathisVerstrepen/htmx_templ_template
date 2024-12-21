@@ -28,7 +28,7 @@ templ layout(contents templ.Component, title string) {
 
         if (environment() != "prod") {
             <script>
-                const socket = new WebSocket(`ws://${window.location.hostname}:9456/ws`);
+                const socket = new WebSocket(`ws://${window.location.hostname}:8080/ws`);
 
                 socket.addEventListener("close", (event) => {
                     let interval = setInterval(() => {

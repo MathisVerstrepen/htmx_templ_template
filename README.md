@@ -24,8 +24,9 @@ This repository provides a starter template for building web applications using 
    cd htmx_templ_template
    ```
 
-2. Install dependencies:
+2. Init & Install dependencies:
    ```
+   go mod init template
    go mod tidy
    ```
 
@@ -50,7 +51,7 @@ This repository provides a starter template for building web applications using 
    air
    ```
 
-7. Open your browser and navigate to `http://localhost:4269`
+7. Open your browser and navigate to `http://localhost:8080`
 
 ## Project Structure
 

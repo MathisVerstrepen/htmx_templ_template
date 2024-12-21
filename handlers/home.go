@@ -5,7 +5,7 @@ import (
 
 	"github.com/labstack/echo/v4"
 
-	comp "diikstra.fr/template/components"
+	comp "template/components"
 )
 
 func HomeHandler(c echo.Context) error {
