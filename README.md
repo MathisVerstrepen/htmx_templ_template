@@ -24,34 +24,39 @@ This repository provides a starter template for building web applications using 
    cd htmx_templ_template
    ```
 
-2. Init & Install dependencies:
+2. Copy the `.env.example` file to `.env`:
+   ```
+   cp .env.example .env
+   ```
+
+3. Init & Install dependencies:
    ```
    go mod init template
    go mod tidy
    ```
 
-3. Install Air for live reload:
+4. Install Air for live reload:
    ```
    go install github.com/air-verse/air@latest
    alias air="~/go/bin/air"
    ```
 
-4. Install templ CLI tool:
+5. Install templ CLI tool:
    ```
    go install github.com/a-h/templ/cmd/templ@latest
    ```
 
-5. Install tailwind dependencies:
+6. Install tailwind dependencies:
    ```
    npm install
    ```
 
-6. Run the development server:
+7. Run the development server:
    ```
    air
    ```
 
-7. Open your browser and navigate to `http://localhost:8080`
+7. Open your browser and navigate to `http://localhost:3000`
 
 ## Project Structure
 

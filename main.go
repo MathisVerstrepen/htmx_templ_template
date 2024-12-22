@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"os"
 
 	"github.com/labstack/echo/v4"
@@ -28,5 +29,5 @@ func main() {
 		e.GET("/ws", handlers.GlobalHotReloadWS)
 	}
 
-	e.Logger.Fatal(e.Start(":8080"))
+	e.Logger.Fatal(e.Start(fmt.Sprintf(":%s", os.Getenv("PORT"))))
 }

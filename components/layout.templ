@@ -2,8 +2,8 @@ package components
 
 import "os"
 
-func environment() string {
-    return os.Getenv("ENV")
+func getEnv(key string) string {
+    return os.Getenv(key)
 }
 
 templ layout(contents templ.Component, title string) {
@@ -26,9 +26,11 @@ templ layout(contents templ.Component, title string) {
 
         <script src="https://unpkg.com/htmx.org@2.0.0/dist/htmx.min.js"></script>
 
-        if (environment() != "prod") {
+        if (getEnv("ENV") != "prod") {
+            @templ.JSONScript("port", getEnv("PORT"))
             <script>
-                const socket = new WebSocket(`ws://${window.location.hostname}:8080/ws`);
+                const port = JSON.parse(document.getElementById('port').textContent);
+                const socket = new WebSocket(`ws://${window.location.hostname}:${port}/ws`);
 
                 socket.addEventListener("close", (event) => {
                     let interval = setInterval(() => {
@@ -38,7 +40,6 @@ templ layout(contents templ.Component, title string) {
                                 clearInterval(interval);
                                 setTimeout(() => {
                                     window.location.reload();
-                                    
                                 }, 100);
                             }
                         });
